@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,5 +26,58 @@ html, body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
 }
 
+.container {
+  width: 85vw;
+  height: 100vh;
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 24px 57px 1fr 80px;
+  grid-template-rows: 24px 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo home navbar login"
+    "content content content content"
+    "content content content content"
+    "footer footer footer footer";
+}
+
+.logo {
+  grid-area: logo;
+  background-color: #ff6600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  grid-area: home;
+  background-color: #ff6600;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #ff6600;
+}
+
+.login {
+  grid-area: login;
+  background-color: #ff6600;
+}
+
+.content {
+  grid-area: content;
+
+  background-color: #f6f6ef;
+}
+
+.footer {
+  grid-area: footer;
+
+  background-color: #f6f6ef;
+}
