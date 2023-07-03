@@ -1,12 +1,14 @@
 import { useState } from 'react'
-
+import logo from './images/y18.svg'
 function App() {
 
   return (
     <>
       <div className='wrapper'>
       <div class="container">
-  <div class="logo"></div>
+  <div class="logo">
+    <img src={logo} alt='Logo'/>
+  </div>
   <div class="home"></div>
   <div class="navbar"></div>
   <div class="login"></div>
