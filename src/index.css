@@ -22,13 +22,13 @@ body {
   margin-top: 5px;
   display: grid;
   grid-template-columns: 24px 100px 1fr 80px;
-  grid-template-rows: 24px 1fr 1fr 1fr;
+  grid-template-rows: 24px 1fr 2px 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "logo home navbar login"
     "content content content content"
-    "content content content content"
+    "orange orange orange orange"
     "footer footer footer footer";
 }
 
@@ -63,8 +63,14 @@ body {
 
 .content {
   grid-area: content;
-
   background-color: #f6f6ef;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.orange {
+  width: 83vw;
+  background-color: #ff6600;
 }
 
 .footer {
@@ -96,4 +102,17 @@ ul li {
 a {
   text-decoration: none;
   color: #000;
+}
+
+#subtext {
+  font-size: 7pt;
+  color: #7c7c78;
+}
+
+#title {
+  font-size: 9pt;
+}
+
+#flex {
+  display: flex;
 }

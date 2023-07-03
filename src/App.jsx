@@ -1,22 +1,28 @@
 import logo from "./images/y18.svg";
 import Navbar from "./components/Navbar";
+import Content from './components/Content'
+
+
 function App() {
   return (
     <>
       <div className="wrapper">
-        <div class="container">
-          <div class="logo">
+        <div className="container">
+          <div className="logo">
             <img src={logo} alt="Logo" />
           </div>
-          <div class="home">
+          <div className="home">
             <p className="black">Hacker News</p>
           </div>
-          <div class="navbar">
+          <div className="navbar">
             <Navbar />
           </div>
-          <div class="login"></div>
-          <div class="content"></div>
-          <div class="footer"></div>
+          <div className="login"></div>
+          <div className="content">
+            <Content />
+          </div>
+          <div className="orange"></div>
+          <div className="footer"></div>
         </div>
       </div>
       <div></div>
