@@ -1,4 +1,3 @@
-import { useState } from "react";
 import logo from "./images/y18.svg";
 import Navbar from "./components/Navbar";
 function App() {
