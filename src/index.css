@@ -75,8 +75,11 @@ body {
 
 .footer {
   grid-area: footer;
-
   background-color: #f6f6ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 ul {
@@ -113,6 +116,19 @@ a {
   font-size: 9pt;
 }
 
+label {
+  font-size: 11pt;
+  color: #7c7c78;
+}
+
+form {
+  margin-top: 10px;
+}
+
 #flex {
   display: flex;
+}
+
+input {
+  margin-left: 5px;
 }
